@@ -10,9 +10,9 @@ namespace aspnetapp
     public class HelloWorldController : Controller
     {
 
-        public string Index(string name = "", int id = 0)
+        public IActionResult Index()
         {
-            return "Hi here";
+            return View();
         }
 
         public string WelcomeSafe(string name = "", int id = 0)
