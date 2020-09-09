@@ -10,8 +10,9 @@ namespace aspnetapp
     public class HelloWorldController : Controller
     {
 
-        public IActionResult Index()
+        public IActionResult Index(string id = "")
         {
+            ViewData["id"] = id;
             return View();
         }
 
